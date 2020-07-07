@@ -19,7 +19,7 @@ ENV TZ=America/New_York
 
     # Python3 & Dependencies
 RUN apt -y install python3.7 python3-pip python2.7 python-pip libffi-dev mono-complete ffmpeg \
-    && pip3 install aiohttp websockets pynacl opuslib libopus0 \
+    && pip3 install aiohttp websockets pynacl opuslib \
     && python3 -m pip install -U discord.py[voice]
 
 USER container
