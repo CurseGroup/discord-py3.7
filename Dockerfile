@@ -2,6 +2,8 @@ FROM ubuntu:18.04
 
 MAINTAINER Arnaud Lier, <zeprofdecoding@gmail.com>
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt update \
     && apt upgrade -y \
     && apt autoremove -y \
