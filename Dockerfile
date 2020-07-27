@@ -12,10 +12,10 @@ RUN apt update \
     && useradd -d /home/container -m container
 
     # Ensure UTF-8
-RUN locale-gen en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LC_ALL en_US.UTF-8
-ENV TZ=America/New_York
+RUN locale-gen fr_FR.UTF-8
+ENV LANG fr_FR.UTF-8
+ENV LC_ALL fr_FR.UTF-8
+ENV TZ=Europe/Paris
 
     # Python3 & Dependencies
 RUN apt -y install python3.7 python3-pip python2.7 python-pip libffi-dev mono-complete ffmpeg \
