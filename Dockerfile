@@ -7,7 +7,6 @@ RUN         apt update \
             && useradd -m -d /home/container container
 
 # Ensure UTF-8
-RUN         locale-gen fr_FR.UTF-8
 ENV         LANG fr_FR.UTF-8
 ENV         LC_ALL fr_FR.UTF-8
 ENV         TZ=Europe/Paris
